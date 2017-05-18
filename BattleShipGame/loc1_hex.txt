@@ -1,0 +1,5 @@
+AircraftCarrier 7 5 E
+Battleship 4 6 SW
+Submarine 6 11 SE
+Cruiser 9 6 E
+Destroyer 5 5 SW

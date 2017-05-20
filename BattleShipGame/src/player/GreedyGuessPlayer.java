@@ -20,8 +20,8 @@ public class GreedyGuessPlayer  implements Player{
 	private World world;
 	private ArrayList<Guess> parity = new ArrayList<Guess>(); //hard code for the parity pattern
 	private ArrayList<Integer> indexArray = new ArrayList<Integer>(); // track for the random Index
-	private Stack<Guess> hit = new Stack<Guess>(); // register for every single hitted cell
-	private ArrayList<Guess> allCell = new ArrayList<Guess>(); //tracking for every signle cell
+	private Stack<Guess> hit = new Stack<Guess>(); // register for every single hit cell
+	private ArrayList<Guess> allCell = new ArrayList<Guess>(); //tracking for every single cell
 	private final int[] directions = {-1,1,-1,1};
 	private ArrayList<Guess> adjCell = new ArrayList<Guess>(); // store adjacent cell
 //	private ArrayList<Integer> indexAdjCell = new ArrayList<Integer>();
@@ -68,6 +68,7 @@ public class GreedyGuessPlayer  implements Player{
     				
     				answer.isHit=true;
     				ship = world.shipLocations.get(i).ship;
+//    				System.out.println("Ship class" + ship.getClass());
     				break;
     			}
     		}
